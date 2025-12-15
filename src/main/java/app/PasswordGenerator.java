@@ -28,12 +28,12 @@ public class PasswordGenerator {
         String lower = "abcdefghijklmnopqrstuvwxyz";
         String upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String digits = "0123456789";
-        String спец = "!@#$%^&*()-_=+[]{};:,.?/\\|";
+        String special = "!@#$%^&*()-_=+[]{};:,.?/\\|";
 
         return switch (level) {
             case LOW -> lower;
             case MEDIUM -> lower + upper + digits;
-            case HIGH -> lower + upper + digits + спец;
+            case HIGH -> lower + upper + digits + special;
         };
     }
 }
